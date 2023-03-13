@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    width: 90vw;
+    display: flex;
+}
+
+.card {
+    margin: 0.3vw;
+    width: 0.2vw;
+    height: 80vh;
+    border-radius: 1vw;
+    cursor: pointer;
+    flex-grow: 0.5;
+    transition: flex 1s ease-in;
+    position: relative;
+}
+
+.card h3 {
+    margin: 0;
+    padding-top: 150%;
+    padding-left: 20%;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    color: #fff;
+    font-size: 3vw;
+}
+
+.card.active {
+    flex-grow: 5;
+}
+
+.card.active h3 {
+    writing-mode: horizontal-tb;
+    font-size: 8vw;
+    padding-top: 25%;
+}
