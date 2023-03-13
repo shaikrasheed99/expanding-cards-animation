@@ -9,6 +9,7 @@ body {
     justify-content: center;
     overflow: hidden;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -23,7 +24,7 @@ body {
     border-radius: 1vw;
     cursor: pointer;
     flex-grow: 0.5;
-    transition: flex 1s ease-in;
+    transition: flex 0.5s ease-in;
     position: relative;
 }
 
